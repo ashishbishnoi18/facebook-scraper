@@ -1,7 +1,7 @@
 {
   "contract_version": "modspec/v1",
   "platform_id": "facebook",
-  "module_version": "0.1.1",
+  "module_version": "0.1.2",
   "name": "Facebook",
   "description": "Scrapes public Facebook data including pages, posts, events, videos, reviews, and ads library.",
   "go_module_path": "github.com/embedtools/facebook-scraper",
@@ -143,20 +143,6 @@
       "output_schema": "schemas/facebook.post.get.output.schema.json",
       "example_input": "examples/facebook.post.get.json",
       "canary": "canaries/facebook.post.get.yaml"
-    },
-    {
-      "id": "facebook.photo.get",
-      "name": "Get Photo",
-      "description": "Fetches a Facebook photo's details including image URL, dimensions, and reactions.",
-      "method": "GetPhoto",
-      "timeout_ms": 30000,
-      "run_cost": 1,
-      "max_fetch_parallelism": 1,
-      "default_async": false,
-      "input_schema": "schemas/facebook.photo.get.input.schema.json",
-      "output_schema": "schemas/facebook.photo.get.output.schema.json",
-      "example_input": "examples/facebook.photo.get.json",
-      "canary": "canaries/facebook.photo.get.yaml"
     },
     {
       "id": "facebook.page-reels.list",
