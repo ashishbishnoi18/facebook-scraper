@@ -1,0 +1,10 @@
+version: 1
+platform_id: "facebook"
+capability_id: "facebook.post.get"
+cases:
+  - name: "facebook_post_get"
+    input:
+      url: "https://www.facebook.com/Meta/posts/pfbid0EwsxFj5K4PGG5XS58NxrZwEYgrx4aWwnSYJdFVsphLZDJMPXYiokrkefu1CmKm4Vl"
+    expect:
+      success: true
+    timeout_seconds: 30

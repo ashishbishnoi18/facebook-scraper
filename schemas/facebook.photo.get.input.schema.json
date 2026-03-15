@@ -1,0 +1,13 @@
+{
+  "type": "object",
+  "properties": {
+    "url": {
+      "type": "string",
+      "description": "Photo URL",
+      "example": "https://www.facebook.com/photo/?fbid=266478569374694"
+    }
+  },
+  "required": [
+    "url"
+  ]
+}

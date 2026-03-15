@@ -1,0 +1,10 @@
+version: 1
+platform_id: "facebook"
+capability_id: "facebook.page-posts.list"
+cases:
+  - name: "facebook_page-posts_list"
+    input:
+      url: "https://www.facebook.com/Meta"
+    expect:
+      success: true
+    timeout_seconds: 120

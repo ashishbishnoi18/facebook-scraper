@@ -1,0 +1,10 @@
+version: 1
+platform_id: "facebook"
+capability_id: "facebook.ads-library.search"
+cases:
+  - name: "facebook_ads-library_search"
+    input:
+      query: "Meta AI"
+    expect:
+      success: true
+    timeout_seconds: 120

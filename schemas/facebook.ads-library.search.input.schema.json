@@ -1,0 +1,22 @@
+{
+  "type": "object",
+  "properties": {
+    "query": {
+      "type": "string",
+      "description": "Search query string",
+      "example": "Meta AI"
+    },
+    "limit": {
+      "type": "integer",
+      "description": "Maximum number of results to return",
+      "example": 20
+    },
+    "cursor": {
+      "type": "string",
+      "description": "Pagination cursor from previous response"
+    }
+  },
+  "required": [
+    "query"
+  ]
+}

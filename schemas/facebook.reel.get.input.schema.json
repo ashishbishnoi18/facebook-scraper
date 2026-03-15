@@ -1,0 +1,13 @@
+{
+  "type": "object",
+  "properties": {
+    "url": {
+      "type": "string",
+      "description": "Resource URL to scrape",
+      "example": "https://www.facebook.com/reel/123456789"
+    }
+  },
+  "required": [
+    "url"
+  ]
+}

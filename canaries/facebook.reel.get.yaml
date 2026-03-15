@@ -1,0 +1,10 @@
+version: 1
+platform_id: "facebook"
+capability_id: "facebook.reel.get"
+cases:
+  - name: "facebook_reel_get"
+    input:
+      url: "https://www.facebook.com/reel/911507208162880"
+    expect:
+      success: true
+    timeout_seconds: 30

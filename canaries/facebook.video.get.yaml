@@ -1,0 +1,10 @@
+version: 1
+platform_id: "facebook"
+capability_id: "facebook.video.get"
+cases:
+  - name: "facebook_video_get"
+    input:
+      url: "https://www.facebook.com/Meta/videos/911507208162880/"
+    expect:
+      success: true
+    timeout_seconds: 30

@@ -1,0 +1,60 @@
+{
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Video identifier",
+      "example": "123456789"
+    },
+    "title": {
+      "type": "string",
+      "description": "Video title",
+      "example": "Meta Product Launch"
+    },
+    "description": {
+      "type": "string",
+      "description": "Video description",
+      "example": "A detailed video description"
+    },
+    "author_name": {
+      "type": "string",
+      "description": "Author display name",
+      "example": "Meta"
+    },
+    "views_count": {
+      "type": "integer",
+      "description": "Number of views",
+      "example": 5000000
+    },
+    "likes_count": {
+      "type": "integer",
+      "description": "Number of likes",
+      "example": 50000
+    },
+    "comments_count": {
+      "type": "integer",
+      "description": "Number of comments",
+      "example": 5000
+    },
+    "duration_seconds": {
+      "type": "integer",
+      "description": "Duration in seconds",
+      "example": 180
+    },
+    "thumbnail_url": {
+      "type": "string",
+      "description": "Thumbnail image URL",
+      "example": "https://scontent.xx.fbcdn.net/v/thumb.jpg"
+    },
+    "url": {
+      "type": "string",
+      "description": "Video URL",
+      "example": "https://www.facebook.com/watch/?v=123456789"
+    },
+    "published_at": {
+      "type": "string",
+      "description": "Publication timestamp in RFC3339 format",
+      "example": "2024-01-15T00:00:00Z"
+    }
+  }
+}

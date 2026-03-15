@@ -1,0 +1,40 @@
+{
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Comment identifier",
+      "example": "c_98765432"
+    },
+    "text": {
+      "type": "string",
+      "description": "Comment text content",
+      "example": "Great content, very informative!"
+    },
+    "author_name": {
+      "type": "string",
+      "description": "Comment author display name",
+      "example": "commenter123"
+    },
+    "author_id": {
+      "type": "string",
+      "description": "Comment author identifier",
+      "example": "87654321"
+    },
+    "created_at": {
+      "type": "string",
+      "description": "Comment creation timestamp",
+      "example": "2024-01-15T12:00:00Z"
+    },
+    "likes_count": {
+      "type": "integer",
+      "description": "Number of likes on comment",
+      "example": 25
+    },
+    "reply_count": {
+      "type": "integer",
+      "description": "Number of replies",
+      "example": 3
+    }
+  }
+}

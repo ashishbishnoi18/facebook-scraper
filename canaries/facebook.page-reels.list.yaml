@@ -1,0 +1,10 @@
+version: 1
+platform_id: "facebook"
+capability_id: "facebook.page-reels.list"
+cases:
+  - name: "facebook_page-reels_list"
+    input:
+      url: "https://www.facebook.com/Meta"
+    expect:
+      success: true
+    timeout_seconds: 60

@@ -1,0 +1,10 @@
+version: 1
+platform_id: "facebook"
+capability_id: "facebook.photo.get"
+cases:
+  - name: "facebook_photo_get"
+    input:
+      url: "https://www.facebook.com/photo/?fbid=266478569374694"
+    expect:
+      success: true
+    timeout_seconds: 30

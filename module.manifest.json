@@ -1,0 +1,191 @@
+{
+  "contract_version": "modspec/v1",
+  "platform_id": "facebook",
+  "module_version": "0.1.0",
+  "name": "Facebook",
+  "description": "Scrapes public Facebook data including pages, posts, events, videos, reviews, and ads library.",
+  "go_module_path": "github.com/embedtools/facebook-scraper",
+  "public_packages": [
+    "scraper",
+    "types"
+  ],
+  "network_mode": "host_fetch",
+  "defaults": {
+    "timeout_ms": 30000
+  },
+  "runtime": {
+    "worker_class": "paginated",
+    "min_workers": 1,
+    "max_workers": 4,
+    "startup_timeout_ms": 5000,
+    "idle_ttl_ms": 300000,
+    "recycle_after_runs": 100,
+    "max_memory_mb": 512
+  },
+  "x-ui": {
+    "logo_path": "assets/logo.svg",
+    "icon_path": "assets/icon.svg",
+    "brand_color": "#1877F2"
+  },
+  "capabilities": [
+    {
+      "id": "facebook.page.get",
+      "name": "Get Page",
+      "description": "Fetches a Facebook page's public profile including name, category, follower count, and page metadata.",
+      "method": "GetPage",
+      "timeout_ms": 30000,
+      "run_cost": 1,
+      "max_fetch_parallelism": 1,
+      "default_async": false,
+      "input_schema": "schemas/facebook.page.get.input.schema.json",
+      "output_schema": "schemas/facebook.page.get.output.schema.json",
+      "example_input": "examples/facebook.page.get.json",
+      "canary": "canaries/facebook.page.get.yaml"
+    },
+    {
+      "id": "facebook.page-posts.list",
+      "name": "List Page Posts",
+      "description": "Lists recent posts from a Facebook page including text, media, and engagement metrics.",
+      "method": "ListPagePosts",
+      "timeout_ms": 120000,
+      "run_cost": 2,
+      "max_fetch_parallelism": 3,
+      "default_async": true,
+      "input_schema": "schemas/facebook.page-posts.list.input.schema.json",
+      "output_schema": "schemas/facebook.page-posts.list.output.schema.json",
+      "example_input": "examples/facebook.page-posts.list.json",
+      "canary": "canaries/facebook.page-posts.list.yaml",
+      "stream_method": "ListPagePosts"
+    },
+    {
+      "id": "facebook.post-comments.list",
+      "name": "List Post Comments",
+      "description": "Lists comments on a Facebook post including comment text, author, and reaction counts.",
+      "method": "ListPostComments",
+      "timeout_ms": 120000,
+      "run_cost": 2,
+      "max_fetch_parallelism": 3,
+      "default_async": true,
+      "input_schema": "schemas/facebook.post-comments.list.input.schema.json",
+      "output_schema": "schemas/facebook.post-comments.list.output.schema.json",
+      "example_input": "examples/facebook.post-comments.list.json",
+      "canary": "canaries/facebook.post-comments.list.yaml",
+      "stream_method": "ListPostComments"
+    },
+    {
+      "id": "facebook.ads-library.search",
+      "name": "Search Ads Library",
+      "description": "Searches the Facebook Ads Library for active and inactive ads by advertiser or keyword.",
+      "method": "SearchAdsLibrary",
+      "timeout_ms": 120000,
+      "run_cost": 2,
+      "max_fetch_parallelism": 3,
+      "default_async": true,
+      "input_schema": "schemas/facebook.ads-library.search.input.schema.json",
+      "output_schema": "schemas/facebook.ads-library.search.output.schema.json",
+      "example_input": "examples/facebook.ads-library.search.json",
+      "canary": "canaries/facebook.ads-library.search.yaml",
+      "stream_method": "SearchAdsLibrary"
+    },
+    {
+      "id": "facebook.video.get",
+      "name": "Get Video",
+      "description": "Fetches details about a public Facebook video including title, view count, and engagement metrics.",
+      "method": "GetVideo",
+      "timeout_ms": 30000,
+      "run_cost": 1,
+      "max_fetch_parallelism": 1,
+      "default_async": false,
+      "input_schema": "schemas/facebook.video.get.input.schema.json",
+      "output_schema": "schemas/facebook.video.get.output.schema.json",
+      "example_input": "examples/facebook.video.get.json",
+      "canary": "canaries/facebook.video.get.yaml"
+    },
+    {
+      "id": "facebook.reel.get",
+      "name": "Get Reel",
+      "description": "Fetches details about a public Facebook Reel including video URL, view count, and engagement.",
+      "method": "GetReel",
+      "timeout_ms": 30000,
+      "run_cost": 1,
+      "max_fetch_parallelism": 1,
+      "default_async": false,
+      "input_schema": "schemas/facebook.reel.get.input.schema.json",
+      "output_schema": "schemas/facebook.reel.get.output.schema.json",
+      "example_input": "examples/facebook.reel.get.json",
+      "canary": "canaries/facebook.reel.get.yaml"
+    },
+    {
+      "id": "facebook.page-videos.list",
+      "name": "List Page Videos",
+      "description": "Lists videos posted by a Facebook page with titles, view counts, and engagement metrics.",
+      "method": "ListPageVideos",
+      "timeout_ms": 120000,
+      "run_cost": 2,
+      "max_fetch_parallelism": 3,
+      "default_async": true,
+      "input_schema": "schemas/facebook.page-videos.list.input.schema.json",
+      "output_schema": "schemas/facebook.page-videos.list.output.schema.json",
+      "example_input": "examples/facebook.page-videos.list.json",
+      "canary": "canaries/facebook.page-videos.list.yaml",
+      "stream_method": "ListPageVideos"
+    },
+    {
+      "id": "facebook.post.get",
+      "name": "Get Post",
+      "description": "Fetches a Facebook post's details including text, reactions, shares, and comment count.",
+      "method": "GetPost",
+      "timeout_ms": 30000,
+      "run_cost": 1,
+      "max_fetch_parallelism": 1,
+      "default_async": false,
+      "input_schema": "schemas/facebook.post.get.input.schema.json",
+      "output_schema": "schemas/facebook.post.get.output.schema.json",
+      "example_input": "examples/facebook.post.get.json",
+      "canary": "canaries/facebook.post.get.yaml"
+    },
+    {
+      "id": "facebook.photo.get",
+      "name": "Get Photo",
+      "description": "Fetches a Facebook photo's details including image URL, dimensions, and reactions.",
+      "method": "GetPhoto",
+      "timeout_ms": 30000,
+      "run_cost": 1,
+      "max_fetch_parallelism": 1,
+      "default_async": false,
+      "input_schema": "schemas/facebook.photo.get.input.schema.json",
+      "output_schema": "schemas/facebook.photo.get.output.schema.json",
+      "example_input": "examples/facebook.photo.get.json",
+      "canary": "canaries/facebook.photo.get.yaml"
+    },
+    {
+      "id": "facebook.page-reels.list",
+      "name": "List Page Reels",
+      "description": "Lists reels from a Facebook page with view counts and video metadata.",
+      "method": "ListPageReels",
+      "timeout_ms": 60000,
+      "run_cost": 2,
+      "max_fetch_parallelism": 3,
+      "default_async": true,
+      "input_schema": "schemas/facebook.page-reels.list.input.schema.json",
+      "output_schema": "schemas/facebook.page-reels.list.output.schema.json",
+      "example_input": "examples/facebook.page-reels.list.json",
+      "canary": "canaries/facebook.page-reels.list.yaml",
+      "stream_method": "ListPageReels"
+    }
+  ],
+  "x-network": {
+    "requires_tls_fingerprinting": true,
+    "tls_fingerprint_profiles": [
+      "chrome_120",
+      "chrome_124"
+    ],
+    "requires_proxy": true,
+    "proxy_type": "residential",
+    "proxy_country": "ROTATING"
+  },
+  "x-meta": {
+    "schema_version": 2,
+    "version": "0.1.0"
+  }
+}

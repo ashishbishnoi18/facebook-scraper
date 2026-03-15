@@ -1,0 +1,20 @@
+{
+  "type": "object",
+  "properties": {
+    "query": {
+      "type": "string",
+      "description": "Search query",
+      "example": "Meta AI"
+    },
+    "total_count": {
+      "type": "integer",
+      "description": "Total ads found",
+      "example": 500
+    },
+    "next_cursor": {
+      "type": "string",
+      "description": "Next page cursor",
+      "example": "cursor_abc"
+    }
+  }
+}

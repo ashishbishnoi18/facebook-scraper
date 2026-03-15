@@ -1,0 +1,22 @@
+{
+  "type": "object",
+  "properties": {
+    "url": {
+      "type": "string",
+      "description": "Post URL",
+      "example": "https://www.facebook.com/Meta/posts/pfbid02abc"
+    },
+    "limit": {
+      "type": "integer",
+      "description": "Maximum items per page",
+      "example": 20
+    },
+    "cursor": {
+      "type": "string",
+      "description": "Pagination cursor from previous response"
+    }
+  },
+  "required": [
+    "url"
+  ]
+}

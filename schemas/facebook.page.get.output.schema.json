@@ -1,0 +1,55 @@
+{
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique user identifier",
+      "example": "100064620217893"
+    },
+    "username": {
+      "type": "string",
+      "description": "Username handle",
+      "example": "Meta"
+    },
+    "display_name": {
+      "type": "string",
+      "description": "Display name",
+      "example": "Meta"
+    },
+    "bio": {
+      "type": "string",
+      "description": "User biography or description",
+      "example": "Meta builds technologies that help people connect"
+    },
+    "avatar_url": {
+      "type": "string",
+      "description": "Profile picture URL",
+      "example": "https://scontent.xx.fbcdn.net/v/photo.jpg"
+    },
+    "followers_count": {
+      "type": "integer",
+      "description": "Number of followers",
+      "example": 200000000
+    },
+    "verified": {
+      "type": "boolean",
+      "description": "Whether the account is verified",
+      "example": true
+    },
+    "url": {
+      "type": "string",
+      "description": "Profile URL",
+      "example": "https://www.facebook.com/Meta"
+    },
+    "category": {
+      "type": "string",
+      "description": "Page category",
+      "example": "Technology company"
+    },
+    "likes_count": {
+      "type": "integer",
+      "description": "Page likes",
+      "example": 190000000
+    }
+  }
+}

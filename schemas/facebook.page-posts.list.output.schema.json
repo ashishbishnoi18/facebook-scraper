@@ -1,0 +1,50 @@
+{
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Post identifier",
+      "example": "pfbid02abc"
+    },
+    "text": {
+      "type": "string",
+      "description": "Post text content",
+      "example": "Exciting news from Meta!"
+    },
+    "author_name": {
+      "type": "string",
+      "description": "Author display name",
+      "example": "Meta"
+    },
+    "author_id": {
+      "type": "string",
+      "description": "Author unique identifier",
+      "example": "12345678"
+    },
+    "created_at": {
+      "type": "string",
+      "description": "Creation timestamp in RFC3339 format",
+      "example": "2024-01-15T10:30:00Z"
+    },
+    "likes_count": {
+      "type": "integer",
+      "description": "Number of likes",
+      "example": 50000
+    },
+    "comments_count": {
+      "type": "integer",
+      "description": "Number of comments",
+      "example": 150
+    },
+    "shares_count": {
+      "type": "integer",
+      "description": "Number of shares or reposts",
+      "example": 50
+    },
+    "url": {
+      "type": "string",
+      "description": "Post URL",
+      "example": "https://www.facebook.com/Meta/posts/pfbid02abc"
+    }
+  }
+}
