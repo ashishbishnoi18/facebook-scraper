@@ -6,5 +6,5 @@ cases:
     input:
       url: "https://www.facebook.com/photo/?fbid=266478569374694"
     expect:
-      success: true
+      min_results: 1
     timeout_seconds: 30

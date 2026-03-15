@@ -1,7 +1,7 @@
 {
   "contract_version": "modspec/v1",
   "platform_id": "facebook",
-  "module_version": "0.1.0",
+  "module_version": "0.1.1",
   "name": "Facebook",
   "description": "Scrapes public Facebook data including pages, posts, events, videos, reviews, and ads library.",
   "go_module_path": "github.com/embedtools/facebook-scraper",
@@ -177,8 +177,7 @@
   "x-network": {
     "requires_tls_fingerprinting": true,
     "tls_fingerprint_profiles": [
-      "chrome_120",
-      "chrome_124"
+      "chrome_120"
     ],
     "requires_proxy": true,
     "proxy_type": "residential",
@@ -186,6 +185,6 @@
   },
   "x-meta": {
     "schema_version": 2,
-    "version": "0.1.0"
+    "version": "0.1.1"
   }
 }

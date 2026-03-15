@@ -6,5 +6,5 @@ cases:
     input:
       url: "https://www.facebook.com/Meta/posts/pfbid0EwsxFj5K4PGG5XS58NxrZwEYgrx4aWwnSYJdFVsphLZDJMPXYiokrkefu1CmKm4Vl"
     expect:
-      success: true
+      min_results: 1
     timeout_seconds: 30
