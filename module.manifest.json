@@ -40,7 +40,8 @@
       "input_schema": "schemas/facebook.page.get.input.schema.json",
       "output_schema": "schemas/facebook.page.get.output.schema.json",
       "example_input": "examples/facebook.page.get.json",
-      "canary": "canaries/facebook.page.get.yaml"
+      "canary": "canaries/facebook.page.get.yaml",
+      "billing_metric": "per_request"
     },
     {
       "id": "facebook.page-posts.list",
@@ -55,7 +56,8 @@
       "output_schema": "schemas/facebook.page-posts.list.output.schema.json",
       "example_input": "examples/facebook.page-posts.list.json",
       "canary": "canaries/facebook.page-posts.list.yaml",
-      "stream_method": "ListPagePosts"
+      "stream_method": "ListPagePosts",
+      "billing_metric": "per_request"
     },
     {
       "id": "facebook.post-comments.list",
@@ -70,7 +72,8 @@
       "output_schema": "schemas/facebook.post-comments.list.output.schema.json",
       "example_input": "examples/facebook.post-comments.list.json",
       "canary": "canaries/facebook.post-comments.list.yaml",
-      "stream_method": "ListPostComments"
+      "stream_method": "ListPostComments",
+      "billing_metric": "per_request"
     },
     {
       "id": "facebook.ads-library.search",
@@ -85,7 +88,8 @@
       "output_schema": "schemas/facebook.ads-library.search.output.schema.json",
       "example_input": "examples/facebook.ads-library.search.json",
       "canary": "canaries/facebook.ads-library.search.yaml",
-      "stream_method": "SearchAdsLibrary"
+      "stream_method": "SearchAdsLibrary",
+      "billing_metric": "per_request"
     },
     {
       "id": "facebook.video.get",
@@ -99,7 +103,8 @@
       "input_schema": "schemas/facebook.video.get.input.schema.json",
       "output_schema": "schemas/facebook.video.get.output.schema.json",
       "example_input": "examples/facebook.video.get.json",
-      "canary": "canaries/facebook.video.get.yaml"
+      "canary": "canaries/facebook.video.get.yaml",
+      "billing_metric": "per_request"
     },
     {
       "id": "facebook.reel.get",
@@ -113,7 +118,8 @@
       "input_schema": "schemas/facebook.reel.get.input.schema.json",
       "output_schema": "schemas/facebook.reel.get.output.schema.json",
       "example_input": "examples/facebook.reel.get.json",
-      "canary": "canaries/facebook.reel.get.yaml"
+      "canary": "canaries/facebook.reel.get.yaml",
+      "billing_metric": "per_request"
     },
     {
       "id": "facebook.page-videos.list",
@@ -128,7 +134,8 @@
       "output_schema": "schemas/facebook.page-videos.list.output.schema.json",
       "example_input": "examples/facebook.page-videos.list.json",
       "canary": "canaries/facebook.page-videos.list.yaml",
-      "stream_method": "ListPageVideos"
+      "stream_method": "ListPageVideos",
+      "billing_metric": "per_request"
     },
     {
       "id": "facebook.post.get",
@@ -142,7 +149,8 @@
       "input_schema": "schemas/facebook.post.get.input.schema.json",
       "output_schema": "schemas/facebook.post.get.output.schema.json",
       "example_input": "examples/facebook.post.get.json",
-      "canary": "canaries/facebook.post.get.yaml"
+      "canary": "canaries/facebook.post.get.yaml",
+      "billing_metric": "per_request"
     },
     {
       "id": "facebook.page-reels.list",
@@ -157,7 +165,8 @@
       "output_schema": "schemas/facebook.page-reels.list.output.schema.json",
       "example_input": "examples/facebook.page-reels.list.json",
       "canary": "canaries/facebook.page-reels.list.yaml",
-      "stream_method": "ListPageReels"
+      "stream_method": "ListPageReels",
+      "billing_metric": "per_request"
     }
   ],
   "x-network": {
