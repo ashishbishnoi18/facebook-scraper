@@ -45,6 +45,9 @@
       "type": "string",
       "description": "Post URL",
       "example": "https://www.facebook.com/Meta/posts/pfbid02abc"
-    }
-  }
+    },
+    "items": {},
+    "summary": {}
+  },
+  "additionalProperties": true
 }

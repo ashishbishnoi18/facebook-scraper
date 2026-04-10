@@ -50,6 +50,16 @@
       "type": "integer",
       "description": "Page likes",
       "example": 190000000
-    }
-  }
+    },
+    "best_description": {},
+    "category_name": {},
+    "cover_photo": {},
+    "ctwa_ad4ad_insights": {},
+    "ctx_business_adoption_fact_based_benchmark_page_id": {},
+    "name": {},
+    "profile_picture": {},
+    "profile_picture_uri": {},
+    "viewer": {}
+  },
+  "additionalProperties": true
 }

@@ -35,6 +35,9 @@
       "type": "integer",
       "description": "Number of replies",
       "example": 3
-    }
-  }
+    },
+    "items": {},
+    "summary": {}
+  },
+  "additionalProperties": true
 }
